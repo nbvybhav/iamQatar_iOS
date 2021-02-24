@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Medium.ttf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FilterCollectionViewCell" reuseIdentifier="FilterCollectionViewCell" id="gTV-IL-0wX" customClass="FilterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf8-me-al3">
+                        <rect key="frame" x="4" y="4" width="97" height="37"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="13"/>
+                        <state key="normal" backgroundImage="grad1">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm7-xf-PTq">
+                        <rect key="frame" x="4" y="4" width="97" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bf8-me-al3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="2VR-WO-ALF"/>
+                <constraint firstItem="Zm7-xf-PTq" firstAttribute="top" secondItem="bf8-me-al3" secondAttribute="top" id="7hc-wB-kOn"/>
+                <constraint firstAttribute="trailing" secondItem="bf8-me-al3" secondAttribute="trailing" constant="4" id="7jU-Vc-5SQ"/>
+                <constraint firstAttribute="bottom" secondItem="bf8-me-al3" secondAttribute="bottom" constant="4" id="Xey-3a-w3G"/>
+                <constraint firstItem="bf8-me-al3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="k6z-Le-N3O"/>
+                <constraint firstItem="Zm7-xf-PTq" firstAttribute="trailing" secondItem="bf8-me-al3" secondAttribute="trailing" id="nUI-2U-ehd"/>
+                <constraint firstItem="Zm7-xf-PTq" firstAttribute="bottom" secondItem="bf8-me-al3" secondAttribute="bottom" id="v5d-2y-7QD"/>
+                <constraint firstItem="Zm7-xf-PTq" firstAttribute="leading" secondItem="bf8-me-al3" secondAttribute="leading" id="wGM-5T-Un0"/>
+            </constraints>
+            <size key="customSize" width="107" height="45"/>
+            <connections>
+                <outlet property="lblText" destination="Zm7-xf-PTq" id="GDr-nQ-aUl"/>
+                <outlet property="offerBtn" destination="bf8-me-al3" id="qA9-bc-2eg"/>
+            </connections>
+            <point key="canvasLocation" x="-79.200000000000003" y="58.920539730134934"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="grad1" width="750" height="180"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FeedCollectionViewCell" id="gTV-IL-0wX" customClass="FeedCollectionViewCell" customModule="IamQatar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="212"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-ER-THY">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="212"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_us_banner" translatesAutoresizingMaskIntoConstraints="NO" id="zyx-tx-zAn">
+                                <rect key="frame" x="0.0" y="0.0" width="204" height="212"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckZ-hs-RTX">
+                                <rect key="frame" x="0.0" y="181.5" width="204" height="30.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.23549804687500001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test test test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOX-xf-3ZC">
+                                <rect key="frame" x="8" y="189.5" width="188" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IOX-xf-3ZC" firstAttribute="leading" secondItem="6Qq-ER-THY" secondAttribute="leading" constant="8" id="JHU-n6-ffA"/>
+                            <constraint firstAttribute="bottom" secondItem="IOX-xf-3ZC" secondAttribute="bottom" constant="8" id="QSC-jf-vA2"/>
+                            <constraint firstAttribute="trailing" secondItem="IOX-xf-3ZC" secondAttribute="trailing" constant="8" id="aFu-9H-fzd"/>
+                            <constraint firstAttribute="trailing" secondItem="ckZ-hs-RTX" secondAttribute="trailing" id="baN-uC-cv1"/>
+                            <constraint firstItem="zyx-tx-zAn" firstAttribute="top" secondItem="6Qq-ER-THY" secondAttribute="top" id="dZX-vB-lAz"/>
+                            <constraint firstItem="ckZ-hs-RTX" firstAttribute="top" secondItem="IOX-xf-3ZC" secondAttribute="top" constant="-8" id="dyh-Pf-sd0"/>
+                            <constraint firstAttribute="bottom" secondItem="ckZ-hs-RTX" secondAttribute="bottom" id="gY4-0J-VxX"/>
+                            <constraint firstItem="ckZ-hs-RTX" firstAttribute="leading" secondItem="6Qq-ER-THY" secondAttribute="leading" id="mQt-oz-QZJ"/>
+                            <constraint firstItem="zyx-tx-zAn" firstAttribute="leading" secondItem="6Qq-ER-THY" secondAttribute="leading" id="mct-yT-AVu"/>
+                            <constraint firstAttribute="trailing" secondItem="zyx-tx-zAn" secondAttribute="trailing" id="qYC-Dh-PQd"/>
+                            <constraint firstAttribute="bottom" secondItem="zyx-tx-zAn" secondAttribute="bottom" id="uWq-QL-hjU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6Qq-ER-THY" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="Sfx-Wy-zas"/>
+                <constraint firstItem="6Qq-ER-THY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lO4-1T-phr"/>
+                <constraint firstItem="6Qq-ER-THY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vSS-78-fu5"/>
+                <constraint firstAttribute="bottom" secondItem="6Qq-ER-THY" secondAttribute="bottom" id="wQQ-wA-VwY"/>
+            </constraints>
+            <size key="customSize" width="204" height="212"/>
+            <connections>
+                <outlet property="imgFeed" destination="zyx-tx-zAn" id="fDc-IN-sti"/>
+                <outlet property="lblTitle" destination="IOX-xf-3ZC" id="Ce6-fz-kSK"/>
+            </connections>
+            <point key="canvasLocation" x="-13.043478260869566" y="89.732142857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="about_us_banner" width="366.66665649414062" height="216.66667175292969"/>
+    </resources>
+</document>

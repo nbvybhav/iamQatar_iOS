@@ -1,0 +1,6 @@
+module Pods_IamQatar {
+  umbrella header "Pods-IamQatar-umbrella.h"
+
+  export *
+  module * { export * }
+}

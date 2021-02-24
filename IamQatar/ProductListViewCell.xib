@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="SFProDisplay-Medium.ttf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProductListViewCell" reuseIdentifier="ProductListViewCell" id="gTV-IL-0wX" customClass="ProductListViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vey-qB-Grh">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="230"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk9-77-NyB">
+                        <rect key="frame" x="8" y="7" width="144" height="157"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtk-6m-rCt">
+                        <rect key="frame" x="8" y="174" width="144" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5a-F4-tN7">
+                        <rect key="frame" x="8" y="197" width="144" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xf-In-c27">
+                        <rect key="frame" x="0.0" y="169" width="160" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ko-7N-SD8">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="230"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOLD OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b24-SJ-ZT3">
+                                <rect key="frame" x="8" y="104" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wru-4l-G6L">
+                                <rect key="frame" x="0.0" y="167" width="160" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5v-ms-nRL">
+                        <rect key="frame" x="90" y="12" width="70" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sale_tag" translatesAutoresizingMaskIntoConstraints="NO" id="qtw-9g-sfu">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="22"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 % off" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="jZe-vO-5EW">
+                                <rect key="frame" x="9" y="0.0" width="61" height="22"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jZe-vO-5EW" firstAttribute="leading" secondItem="Z5v-ms-nRL" secondAttribute="leading" constant="9" id="0Bv-z9-KVZ"/>
+                            <constraint firstAttribute="width" constant="70" id="6yb-dm-01U"/>
+                            <constraint firstAttribute="trailing" secondItem="jZe-vO-5EW" secondAttribute="trailing" id="KWG-nG-SyH"/>
+                            <constraint firstItem="qtw-9g-sfu" firstAttribute="leading" secondItem="Z5v-ms-nRL" secondAttribute="leading" id="MWp-Xs-UHK"/>
+                            <constraint firstAttribute="height" constant="22" id="PDc-rq-Ovt"/>
+                            <constraint firstAttribute="bottom" secondItem="qtw-9g-sfu" secondAttribute="bottom" id="Sha-wy-lGS"/>
+                            <constraint firstItem="jZe-vO-5EW" firstAttribute="top" secondItem="Z5v-ms-nRL" secondAttribute="top" id="UIR-9A-hmI"/>
+                            <constraint firstAttribute="trailing" secondItem="qtw-9g-sfu" secondAttribute="trailing" id="fyR-AI-RRN"/>
+                            <constraint firstItem="qtw-9g-sfu" firstAttribute="top" secondItem="Z5v-ms-nRL" secondAttribute="top" id="inr-Tv-21K"/>
+                            <constraint firstAttribute="bottom" secondItem="jZe-vO-5EW" secondAttribute="bottom" id="ulR-ib-WxN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Z5v-ms-nRL" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" constant="12" id="8sa-aa-NtV"/>
+                <constraint firstItem="Z5v-ms-nRL" firstAttribute="trailing" secondItem="SEy-5g-ep8" secondAttribute="trailing" id="D6s-Mx-All"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="150" height="198"/>
+            <connections>
+                <outlet property="bgImage" destination="Vey-qB-Grh" id="nXq-xh-WGR"/>
+                <outlet property="imgOnSale" destination="qtw-9g-sfu" id="xLF-bN-gki"/>
+                <outlet property="lblGrayLine" destination="1xf-In-c27" id="Ps2-bS-Tki"/>
+                <outlet property="lblItemName" destination="Vtk-6m-rCt" id="fKK-KM-fxe"/>
+                <outlet property="lblPrice" destination="K5a-F4-tN7" id="VXi-ed-8XW"/>
+                <outlet property="lblSalesTag" destination="jZe-vO-5EW" id="DwM-CO-2Ws"/>
+                <outlet property="noStockFadeView" destination="3Ko-7N-SD8" id="Dx7-xz-7Nt"/>
+                <outlet property="productImage" destination="zk9-77-NyB" id="1sh-bk-SQu"/>
+                <outlet property="saleTagView" destination="Z5v-ms-nRL" id="dAY-40-6qq"/>
+            </connections>
+            <point key="canvasLocation" x="-520" y="17.991004497751124"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sale_tag" width="97" height="40"/>
+    </resources>
+</document>

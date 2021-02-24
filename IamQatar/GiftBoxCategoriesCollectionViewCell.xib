@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="GiftBoxCategoriesCollectionViewCell" id="gTV-IL-0wX" customClass="GiftBoxCategoriesCollectionViewCell" customModule="IamQatar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQU-Ew-aaZ">
+                        <rect key="frame" x="4" y="4" width="191" height="194"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_us_banner" translatesAutoresizingMaskIntoConstraints="NO" id="iif-q0-y7h">
+                                <rect key="frame" x="0.0" y="0.0" width="191" height="194"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower is a type of kolamazz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHY-cX-TPQ">
+                                <rect key="frame" x="8" y="148.5" width="175" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cHY-cX-TPQ" secondAttribute="trailing" constant="8" id="VKd-Qo-lMw"/>
+                            <constraint firstAttribute="bottom" secondItem="iif-q0-y7h" secondAttribute="bottom" id="bDF-ie-lP2"/>
+                            <constraint firstAttribute="bottom" secondItem="cHY-cX-TPQ" secondAttribute="bottom" constant="12" id="dYb-DB-DAo"/>
+                            <constraint firstItem="iif-q0-y7h" firstAttribute="top" secondItem="VQU-Ew-aaZ" secondAttribute="top" id="ffN-LE-2dj"/>
+                            <constraint firstAttribute="trailing" secondItem="iif-q0-y7h" secondAttribute="trailing" id="gBL-Pn-qQJ"/>
+                            <constraint firstItem="cHY-cX-TPQ" firstAttribute="leading" secondItem="VQU-Ew-aaZ" secondAttribute="leading" constant="8" id="uhS-hX-wM0"/>
+                            <constraint firstItem="iif-q0-y7h" firstAttribute="leading" secondItem="VQU-Ew-aaZ" secondAttribute="leading" id="x53-4E-HEJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VQU-Ew-aaZ" secondAttribute="trailing" constant="4" id="8Of-Iu-NlN"/>
+                <constraint firstItem="VQU-Ew-aaZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="ASB-V6-K5I"/>
+                <constraint firstItem="VQU-Ew-aaZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="Mld-tx-T3W"/>
+                <constraint firstAttribute="bottom" secondItem="VQU-Ew-aaZ" secondAttribute="bottom" constant="4" id="i7T-Ws-frZ"/>
+            </constraints>
+            <size key="customSize" width="199" height="202"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgItem" destination="iif-q0-y7h" id="23d-Db-aqY"/>
+                <outlet property="lblTitle" destination="cHY-cX-TPQ" id="T5w-b5-Umu"/>
+                <outlet property="mainContentView" destination="VQU-Ew-aaZ" id="03F-ce-ocW"/>
+            </connections>
+            <point key="canvasLocation" x="6.5217391304347831" y="135.26785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="about_us_banner" width="366.66665649414062" height="216.66667175292969"/>
+    </resources>
+</document>

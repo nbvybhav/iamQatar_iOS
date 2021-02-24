@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="TagsCollectionViewCell" id="gTV-IL-0wX" customClass="TagsCollectionViewCell" customModule="IamQatar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilD-ra-4Dk">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcl-Y0-R8r">
+                                <rect key="frame" x="61.5" y="53" width="36" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dv-ks-XKh">
+                                <rect key="frame" x="4" y="8" width="151" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18s-RS-ZjN">
+                                <rect key="frame" x="0.0" y="0.0" width="159" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aet-wj-guR">
+                                        <rect key="frame" x="4" y="8" width="151" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14.5" id="1NN-pb-QGD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_gift" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-fO-PWz">
+                                        <rect key="frame" x="12" y="26.5" width="135" height="84.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hkt-fO-PWz" firstAttribute="top" secondItem="Aet-wj-guR" secondAttribute="bottom" constant="4" id="1WN-3o-EpN"/>
+                                    <constraint firstItem="hkt-fO-PWz" firstAttribute="leading" secondItem="18s-RS-ZjN" secondAttribute="leading" constant="12" id="DgY-3H-0nr"/>
+                                    <constraint firstAttribute="trailing" secondItem="hkt-fO-PWz" secondAttribute="trailing" constant="12" id="Xyj-lc-gjN"/>
+                                    <constraint firstItem="Aet-wj-guR" firstAttribute="top" secondItem="18s-RS-ZjN" secondAttribute="top" constant="8" id="a29-fm-5xL"/>
+                                    <constraint firstAttribute="bottom" secondItem="hkt-fO-PWz" secondAttribute="bottom" constant="12" id="bWf-IA-qcV"/>
+                                    <constraint firstItem="hkt-fO-PWz" firstAttribute="centerX" secondItem="18s-RS-ZjN" secondAttribute="centerX" id="eXf-aP-rUM"/>
+                                    <constraint firstItem="Aet-wj-guR" firstAttribute="leading" secondItem="18s-RS-ZjN" secondAttribute="leading" constant="4" id="fv8-eY-1Wj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aet-wj-guR" secondAttribute="trailing" constant="4" id="nmj-DR-szH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1dv-ks-XKh" firstAttribute="top" secondItem="ilD-ra-4Dk" secondAttribute="top" constant="8" id="4xb-Ff-pTg"/>
+                            <constraint firstAttribute="trailing" secondItem="18s-RS-ZjN" secondAttribute="trailing" id="7SK-If-jEp"/>
+                            <constraint firstItem="Jcl-Y0-R8r" firstAttribute="centerX" secondItem="ilD-ra-4Dk" secondAttribute="centerX" id="Voj-rr-4rU"/>
+                            <constraint firstItem="Jcl-Y0-R8r" firstAttribute="centerY" secondItem="ilD-ra-4Dk" secondAttribute="centerY" id="XS9-IV-AlM"/>
+                            <constraint firstItem="18s-RS-ZjN" firstAttribute="top" secondItem="ilD-ra-4Dk" secondAttribute="top" id="ifX-gh-hoV"/>
+                            <constraint firstItem="1dv-ks-XKh" firstAttribute="leading" secondItem="ilD-ra-4Dk" secondAttribute="leading" constant="4" id="kh8-nm-8IC"/>
+                            <constraint firstAttribute="bottom" secondItem="18s-RS-ZjN" secondAttribute="bottom" id="oHy-gT-aRr"/>
+                            <constraint firstAttribute="trailing" secondItem="1dv-ks-XKh" secondAttribute="trailing" constant="4" id="ryg-Uu-78r"/>
+                            <constraint firstItem="18s-RS-ZjN" firstAttribute="leading" secondItem="ilD-ra-4Dk" secondAttribute="leading" id="sMb-QP-1X5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ilD-ra-4Dk" secondAttribute="trailing" id="1Kb-N7-Xrg"/>
+                <constraint firstAttribute="top" secondItem="ilD-ra-4Dk" secondAttribute="top" id="OLg-g3-Ufn"/>
+                <constraint firstItem="ilD-ra-4Dk" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="q12-gQ-hqW"/>
+                <constraint firstAttribute="leading" secondItem="ilD-ra-4Dk" secondAttribute="leading" id="v5L-ZH-GSQ"/>
+            </constraints>
+            <size key="customSize" width="159" height="123"/>
+            <connections>
+                <outlet property="calendarContView" destination="18s-RS-ZjN" id="fvo-8z-AjR"/>
+                <outlet property="lblItem" destination="Jcl-Y0-R8r" id="gMC-9Z-JoI"/>
+                <outlet property="lblTitle" destination="1dv-ks-XKh" id="Oc2-Ma-Spj"/>
+                <outlet property="mainContentView" destination="ilD-ra-4Dk" id="h7L-Lh-Ncf"/>
+            </connections>
+            <point key="canvasLocation" x="19.565217391304348" y="128.23660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendar_gift" width="103" height="103"/>
+    </resources>
+</document>

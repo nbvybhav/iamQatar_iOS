@@ -1,0 +1,165 @@
+//
+//  constants.pch
+//  IamQatar
+//
+//  Created by alisons on 8/29/16.
+//  Copyright © 2016 alisons. All rights reserved.
+//
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef constants_pch
+#define constants_pch
+
+#import <AFNetworking.h>
+#import "AlertController.h"
+#import "Menu.h"
+#import "BaseForObjcViewController.h"
+#import "AppDelegate.h"
+#import "Utility.h"
+#import "ProgressHUD.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "cartViewController.h"
+#import "BestBuyViewController.h"
+#import "RetailViewController.h"
+#import "MarketViewController.h"
+#import "AboutUsViewController.h"
+#import "ProfileViewController.h"
+#import "LoginViewController.h"
+#import "RetailViewController.h"
+#import "contestViewController.h"
+#import <GoogleAnalytics/GAI.h>
+#import <GoogleAnalytics/GAIDictionaryBuilder.h>
+#import <GoogleAnalytics/GAIFields.h>
+#import "SearchViewController.h"
+#import "ContactUsViewController.h"
+#import "emergencyContactViewController.h"
+#import "OrderHistoryViewController.h"
+#import "TermsAndConditionsVC.h"
+#import "MarketDetailViewController.h"
+#import "EventsList.h"
+#import "MallDetailsViewController.h"
+
+#define SYSTEM_VERSION_EQUAL_TO(v)   ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+#define parentURL @"https://iamqatar.qa/version2/"
+//#define parentURL @"http://client.alisonsinfomatics.com/qatardeals/"
+
+//#define loginUrl         @"api_v2.php?page=login"
+//#define signupUrl        @"api_v2.php?page=register"
+//#define passwordResetUrl @"api_v2.php?page=forgotPassword"
+//#define getSalesCategoryUrl   @"api_v2.php?page=getSalesCategory"
+//#define bestBuyUrl       @"api_v2.php?page=getBestBuy"
+//#define giftCategoryUrl  @"api_v2.php?page=getGiftsCategory"
+//#define giftItemsUrl     @"api_v2.php?page=getGifts"
+//#define getRetailUrl     @"api_v2.php?page=getRetails"
+//#define getRetaiCategoryUrl @"api_v2.php?page=getRetailCategory"
+//#define getProductListUrl   @"api_v2.php?page=getProductCategories"
+//#define getEventsCat     @"api_v2.php?page=getEventsCategory"
+//#define getEventDetails  @"api_v2.php?page=getEventDetails"
+//#define getEvents        @"api_v2.php?page=EventSearch"
+//#define productSearchAPI @"api_v2.php?page=getProductsSearch"
+//#define getContactAPI    @"api_v2.php?page=getEmergencyNo"
+//#define getContestAPI    @"api_v2.php?page=getQuiz"
+//#define whatsNewAPI      @"api_v2.php?page=getWhatsnew"
+//#define todaysDeailAPI   @"api_v2.php?page=getTodaysDeals"
+//#define getAdvt          @"api_v2.php?page=getAds"
+//#define postQuizResultAPI @"api_v2.php?page=addQuizResult"
+//#define getProductDetails @"api_v2.php?page=getProductDetails"
+//#define searchAPI         @"api_v2.php?page=search_all_list"
+//#define variantsAPI       @"api_v2.php?page=getVariation"
+//#define allSalesPromoAPI  @"api_v2.php?page=getAllSalesBanners"
+//#define addUserAddress    @"api_v2.php?page=addUserAddress"
+//#define getAddresses      @"api_v2.php?page=getAddresses"
+//#define deleteAddressAPI  @"api_v2.php?page=deleteAddress"
+//#define placeOrderAPI     @"api_v2.php?page=placeOrder"
+//#define orderHistoryAPI   @"api_v2.php?page=orders"
+//#define cancelOrderAPI    @"api_v2.php?page=cancelOrder"
+//#define applyCoupon       @"api_v2.php?page=applycouponcode"
+//#define buyNowTotal       @"api_v2.php?page=getBuynow"
+//#define getCartItems      @"api_v2.php?page=getCartItems"
+//#define addTocart         @"api_v2.php?page=addToCart"
+//#define buyNow            @"api_v2.php?page=buynowOrder"
+//#define savePayment       @"api_v2.php?page=savePaymnet"
+//#define eventDetailsAPI   @"api_v2.php?page=getEventDetails"
+//#define getFlyers         @"api_v2.php?page=getFlyers"
+//#define getVariants       @"getVariation"
+//#define search            @"api_v2.php?page=search"
+//#define getMallListAPI    @"api_v2.php?page=getMalls"
+//#define getMallDetailsAPI @"api_v2.php?page=getMallDetails"
+//#define StoreInMallsAPI   @"api_v2.php?page=getStores"
+//#define aboutUs           @"api_v2.php?page=getPageContent&page_id=23"
+//#define getTerms          @"api_v2.php?page=getTerms"
+//#define skipUserApi       @"api_v2.php?page=skipuser"
+//#define ContactUsApi      @"api_v2.php?page=sentContactMail"
+
+#define loginUrl         @"api.php?page=login"
+#define signupUrl        @"api.php?page=register"
+#define passwordResetUrl @"api.php?page=forgotPassword"
+#define resetPasswordUrl    @"api.php?page=resetpassword"
+
+#define getSalesCategoryUrl   @"api.php?page=getSalesCategory"
+#define bestBuyUrl       @"api.php?page=getBestBuy"
+#define giftCategoryUrl  @"api.php?page=getGiftsCategory"
+#define giftItemsUrl     @"api.php?page=getGifts"
+#define getRetailUrl     @"api.php?page=getRetails"
+#define getRetaiCategoryUrl @"api.php?page=getRetailCategory"
+#define getProductListUrl   @"api.php?page=getProductCategories"
+#define getNewMarketHomePage   @"api.php?page=market"
+#define getEventsCat     @"api.php?page=getEventsCategory"
+#define getEventDetails  @"api.php?page=getEventDetails"
+#define getEvents        @"api.php?page=EventSearch"
+#define productSearchAPI @"api.php?page=getProductsSearch"
+#define getContactAPI    @"api.php?page=getEmergencyNo"
+#define getContestAPI    @"api.php?page=getQuiz"
+#define whatsNewAPI      @"api.php?page=getWhatsnew"
+#define todaysDeailAPI   @"api.php?page=getTodaysDeals"
+#define getAdvt          @"api.php?page=getAds"
+#define postQuizResultAPI @"api.php?page=addQuizResult"
+#define getProductDetails @"api.php?page=getProductDetails"
+#define searchAPI         @"api.php?page=search_all_list"
+#define variantsAPI       @"api.php?page=getVariation"
+#define allSalesPromoAPI  @"api.php?page=getAllSalesBanners"
+#define addUserAddress    @"api.php?page=addUserAddress"
+#define getAddresses      @"api.php?page=getAddresses"
+#define deleteAddressAPI  @"api.php?page=deleteAddress"
+#define placeOrderAPI     @"api.php?page=placeOrder"
+#define orderHistoryAPI   @"api.php?page=orders"
+#define cancelOrderAPI    @"api.php?page=cancelOrder"
+#define applyCoupon       @"api.php?page=applycouponcode"
+#define buyNowTotal       @"api.php?page=getBuynow"
+#define getCartItems      @"api.php?page=getCartItems"
+#define addTocart         @"api.php?page=addToCart"
+#define updateCart        @"api.php?page=updateCartItem"
+#define removeFromCart    @"api.php?page=removeCartItem"
+#define buyNow            @"api.php?page=buynowOrder"
+#define savePayment       @"api.php?page=savePaymnet"
+#define eventDetailsAPI   @"api.php?page=getEventDetails"
+#define getFlyers         @"api.php?page=getFlyers"
+#define getVariants       @"getVariation"
+#define search            @"api.php?page=search"
+#define getMallListAPI    @"api.php?page=getMalls"
+#define getMallDetailsAPI @"api.php?page=getMallDetails"
+#define StoreInMallsAPI   @"api.php?page=getStores"
+#define aboutUs           @"api.php?page=getPageContent&page_id=23"
+#define getTerms          @"api.php?page=getTerms"
+#define skipUserApi       @"api.php?page=skipuser"
+#define ContactUsApi      @"api.php?page=sentContactMail"
+
+#define IAQFeedsApi      @"api.php?page=iaqfeeds"
+#define IAQFeedsDetailsApi      @"api.php?page=iaqfeed_details"
+
+#define enviournment      @"production"  //(development OR production)
+
+#define INSTAGRAM_AUTHURL                               @"https://api.instagram.com/oauth/authorize/"
+#define INSTAGRAM_APIURl                                @"https://api.instagram.com/v1/users/"
+#define INSTAGRAM_CLIENT_ID                             @"1b244ed17eb74138b821aa04e1424ecc"
+#define INSTAGRAM_CLIENTSERCRET                         @"d71b69701e68431e9b331a99868a3492"
+#define INSTAGRAM_REDIRECT_URI                          @"http://client.alisonsinfomatics.in/qatardeals/"
+#define INSTAGRAM_ACCESS_TOKEN                          @"access_token"
+#define INSTAGRAM_SCOPE                                 @"likes+comments+relationships"
+#define contains(str1, str2) ([str1 rangeOfString: str2 ].location != NSNotFound)
+
+#endif /* constants_pch */
